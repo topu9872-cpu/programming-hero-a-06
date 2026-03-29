@@ -1,11 +1,15 @@
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+
+
 const Footer = () => {
   return (
     <footer className="bg-zinc-950 
-border-t border-red-900/50 pt-16 pb-
-10">
+border-t border-red-900/50 pt-16 pb-10">
       <div className="max-w-7xl mx-
-auto px-6">
-        <div className="flex md:grid-cols-12 gap-12 text-white mx-auto justify-center">
+auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 pl-10 text-white">
           {/* Logo & Description */}
           <div className="md:col-span-
 5">
@@ -175,8 +179,12 @@ transition">
             </ul>
           </div>
 <div>
-    <h3 className="text-lg font-semibold">Social Links</h3>
-    <img src="" /><img src=""/><img src="" />
+    <h3 className="text-lg font-semibold text-nowrap">Social Links</h3>
+<div className="flex gap-4">
+<p className="bg-slate-400 rounded-full p-1"><FaInstagram/></p>
+<p className="bg-slate-400 rounded-full p-1"><FaFacebook/></p>
+<p className="bg-slate-400 rounded-full p-1"><FaXTwitter/></p>
+</div>
 </div>
         </div>
 

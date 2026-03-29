@@ -5,7 +5,7 @@ const Banner = () => {
     <div className="max-w-10/12 flex mx-auto">
       <div
         className="relative min-h-162.5 flex items-
-center overflow-hidden"
+center overflow-hidden "
       >
         <div
           className=" mx-auto grid grid-cols-1 
