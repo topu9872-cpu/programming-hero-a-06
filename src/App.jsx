@@ -8,13 +8,15 @@ import FakeCards from './Components/CardsSection/FakeCards';
  import FakeCardBuying from './Components/CardsSection/FakeCardBuying'
  import Footer from './Components/CardsSection/Footer'
 import CardsApiCalling from '../src/Components/CardsSection/CardsApiCalling'
+import { Suspense } from 'react';
+
 
 
 function App() {
 
  const fetchData = async () => {
   const res = await fetch('../public/Api.json');
-  return res
+ return await res.json();
 
   
  }
@@ -31,8 +33,13 @@ const promise = fetchData()
 <Navbar/>
 <Banner/>
 <Ratting/>
-<CardsApiCalling promise={promise}/>
-<Cards/>
+
+<Suspense fallback={<p>Loading...............</p>}>
+<Cards promise={promise}/>
+</Suspense>
+ 
+
+
 <FakeCards/>
 <FakeCardBuying/>
 <Footer/>

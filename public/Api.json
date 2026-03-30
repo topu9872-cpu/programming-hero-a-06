@@ -3,22 +3,18 @@
     "id": 1,
     "name": "Starter Resume Builder",
     "description": "Create professional resumes with easy-to-use templates.",
-    "price": "9.99 / one-time",
+    "price": "9.99",
     "period": "one-time",
     "tag": "new",
     "tagType": "new",
-    "features": [
-      "50+ templates",
-      "Basic ATS optimization",
-      "Export to PDF"
-    ],
-    "icon": "file-text"
+    "features": ["50+ templates", "Basic ATS optimization", "Export to PDF"],
+    "icon": "https://i.ibb.co.com/R4Pzqvvc/design-tool.png"
   },
   {
     "id": 2,
     "name": "Pro Resume Builder",
     "description": "Advanced resume building with premium templates and tools.",
-    "price": "14.99 / monthly",
+    "price": "14.99",
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
@@ -28,13 +24,14 @@
       "Export to PDF & Word",
       "Cover letter builder"
     ],
-    "icon": "award"
+    "icon": "https://i.ibb.co.com/vx3jdq3p/operation.png"
   },
+
   {
     "id": 3,
     "name": "Career Toolkit",
     "description": "All-in-one toolkit for job seekers to land their dream job.",
-    "price": "39.99 / yearly",
+    "price": "39.99",
     "period": "yearly",
     "tag": "best seller",
     "tagType": "best seller",
@@ -44,13 +41,13 @@
       "LinkedIn optimization",
       "Job tracking dashboard"
     ],
-    "icon": "briefcase"
+    "icon": "https://i.ibb.co.com/PGQ3Q15B/camera-8775444.png"
   },
   {
     "id": 4,
     "name": "Portfolio Builder",
     "description": "Build stunning personal portfolios in minutes.",
-    "price": "11.99 / monthly",
+    "price": "11.99",
     "period": "monthly",
     "tag": "new",
     "tagType": "new",
@@ -60,13 +57,13 @@
       "Responsive design",
       "SEO tools"
     ],
-    "icon": "layout"
+    "icon": "https://i.ibb.co.com/N2DRKmFH/portfolio.png"
   },
   {
     "id": 5,
     "name": "Interview Coach AI",
     "description": "Practice interviews with AI-powered feedback.",
-    "price": "19.99 / monthly",
+    "price": "19.99",
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
@@ -76,13 +73,13 @@
       "Industry-specific questions",
       "Performance analytics"
     ],
-    "icon": "mic"
+    "icon": "https://i.ibb.co.com/Ps1LCB6m/social-media.png"
   },
   {
     "id": 6,
     "name": "Ultimate Job Seeker Bundle",
     "description": "Complete bundle for job seekers with all premium tools.",
-    "price": "69.99 / yearly",
+    "price": "69.99",
     "period": "yearly",
     "tag": "best seller",
     "tagType": "best seller",
@@ -92,6 +89,6 @@
       "Unlimited exports",
       "Access to new tools"
     ],
-    "icon": "star"
+    "icon": "https://i.ibb.co.com/cKDTMvgC/writing-2327400-1.png"
   }
 ]

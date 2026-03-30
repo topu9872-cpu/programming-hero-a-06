@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import CardsEmpty from "../CardsEmpty";
+import CardsApiCalling from './CardsApiCalling'
 
-const Cards = () => {
+const Cards = ({promise}) => {
+ 
+ 
   const [toggle, settoggle] = useState("Products");
   return (
-    <div className="text-center pt-20">
-      <div className="space-y-6">
+    <div className="text-center pt-20 flex flex-col mx-auto">
+      <div className="space-y-6 max-w-1/2 flex flex-col mx-auto">
         <h1 className="font-semibold text-5xl">Premium Digital Tools</h1>
-        <p className="text-gray-500">
+        <p className="text-gray-500 text-wrap">
           Choose from our curated collection of premium digital products
           designed to boost your productivity and creativity.
         </p>
@@ -31,9 +35,13 @@ const Cards = () => {
               : ""
           } rounded-full px-4 py-2`}
         >
-          Cart (2)
-        </button>
-      </div>
+          Cart 
+    </button>
+  </div>
+  {toggle==='Carts' && <CardsEmpty/>}
+  {toggle==='Products' && <CardsApiCalling promise={promise}/>}
+  
+  
     </div>
   );
 };
