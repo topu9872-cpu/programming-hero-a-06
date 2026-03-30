@@ -35,7 +35,7 @@ const promise = fetchData()
 <Ratting/>
 
 <Suspense fallback={<p>Loading...............</p>}>
-<Cards promise={promise}/>
+<Cards promise={promise} />
 </Suspense>
  
 

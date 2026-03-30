@@ -1,14 +1,22 @@
 import React,{useState} from 'react';
 import Cards from './Cards';
 
-const CardsRender = ({card}) => {
+const CardsRender = ({card,setselectedCard,selectedCard}) => {
   
       const [isBuy, setisBuy] = useState(false);
+
+const handleSeleted = ()=>{
+
+  setisBuy(true)
+
+setselectedCard([...selectedCard, card])
+
+}
+
+
     return (
         
- 
-      
-            
+    
       <div className=" mt-10 flex justify-center flex-col h-full">
         <div key={card.id} className="card w-86 h-full flex justify-center mx-auto">
           <div className='flex flex-col h-full hover:shadow-[#0ff] hover:-translate-1'>
@@ -59,7 +67,7 @@ const CardsRender = ({card}) => {
             ))}
             <div className="mt-auto">
               <button
-                onClick={() => setisBuy(true)}
+                onClick={() => handleSeleted()}
                 className={`btn text-white ${isBuy ? "bg-green-400" : "bg-linear-to-r from-[#4f39f6] to-purple-600"} rounded-full 
    btn-block flex-col  font-semibold`}
               >

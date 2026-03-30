@@ -3,7 +3,7 @@ import CardsEmpty from "../CardsEmpty";
 import CardsApiCalling from './CardsApiCalling'
 
 const Cards = ({promise}) => {
- 
+ const [selectedCard,setselectedCard]=useState([])
  
   const [toggle, settoggle] = useState("Products");
   return (
@@ -38,9 +38,9 @@ const Cards = ({promise}) => {
           Cart 
     </button>
   </div>
-  {toggle==='Carts' && <CardsEmpty/>}
-  {toggle==='Products' && <CardsApiCalling promise={promise}/>}
-  
+  {toggle==='Carts' && <CardsEmpty selectedCard={selectedCard} />}
+  {toggle==='Products' && <CardsApiCalling promise={promise} setselectedCard={setselectedCard} selectedCard={selectedCard}
+  />}
   
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../../public/assets/products/shopping-cart.png";
 const Navbar = () => {
   return (
-<div className="max-w-7xl mx-auto px-4">
+<div className="max-w-10/12 mx-auto px-4">
       <div className="navbar">
         <div className="navbar-start">
           <div className="flex items-center gap-1 font-bold text-xl overflow-hidden">
