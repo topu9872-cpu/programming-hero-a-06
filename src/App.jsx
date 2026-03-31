@@ -9,6 +9,7 @@ import Footer from "./Components/CardsSection/Footer";
 import { Suspense } from "react";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FooterBanner from './Components/FooterBanner';
 function App({ card }) {
   
   const fetchData = async () => {
@@ -30,6 +31,7 @@ function App({ card }) {
 <ToastContainer />
       <FakeCards />
       <FakeCardBuying />
+      <FooterBanner/>
       <Footer />
     </>
   );
