@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import CardsEmpty from "../CardsEmpty";
 import CardsApiCalling from './CardsApiCalling'
 
-const Cards = ({promise}) => {
- const [selectedCard,setselectedCard]=useState([])
+const Cards = ({promise, card }) => {
+  
+  
+ const [selectedCard,setSelectedCard]=useState([])
  
   const [toggle, settoggle] = useState("Products");
   return (
@@ -34,12 +36,14 @@ const Cards = ({promise}) => {
               ? "bg-linear-to-r from-[#4f39f6] to-purple-400"
               : ""
           } rounded-full px-4 py-2`}
-        >
-          Cart 
+        
+   
+        >cart
     </button>
+    
   </div>
-  {toggle==='Carts' && <CardsEmpty selectedCard={selectedCard} />}
-  {toggle==='Products' && <CardsApiCalling promise={promise} setselectedCard={setselectedCard} selectedCard={selectedCard}
+  {toggle==='Carts' && <CardsEmpty selectedCard={selectedCard} setSlectedCard={setSelectedCard} />}
+  {toggle==='Products' && <CardsApiCalling promise={promise} setSelectedCard={setSelectedCard} selectedCard={selectedCard}
   />}
   
     </div>

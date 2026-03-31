@@ -1,6 +1,9 @@
-import React from "react";
+
 import Image from "../../public/assets/products/shopping-cart.png";
 const Navbar = () => {
+
+
+
   return (
 <div className="max-w-10/12 mx-auto px-4">
       <div className="navbar">
@@ -30,6 +33,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end gap-5">
+          <p className=' px-2 bg-red-400 text-white absolute top-2 -translate-x-42 rounded-full'>3</p>
           <img className="hidden sm:block" src={Image} alt="cart" />
           <button className="hidden sm:block">Login</button>
           <a className="btn bg-linear-to-r from-[#4f39f6] to-purple-500 text-white rounded-full">

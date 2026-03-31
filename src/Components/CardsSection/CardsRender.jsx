@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import Cards from './Cards';
+import { toast } from 'react-toastify';
 
 const CardsRender = ({card,setselectedCard,selectedCard}) => {
   
@@ -10,7 +11,7 @@ const handleSeleted = ()=>{
   setisBuy(true)
 
 setselectedCard([...selectedCard, card])
-
+toast.success('Product is in to the Cart')
 }
 
 
@@ -71,7 +72,7 @@ setselectedCard([...selectedCard, card])
                 className={`btn text-white ${isBuy ? "bg-green-400" : "bg-linear-to-r from-[#4f39f6] to-purple-600"} rounded-full 
    btn-block flex-col  font-semibold`}
               >
-                {isBuy ? "Add To Cart" : "Buy Now"}
+                {isBuy ? 'Add To Cart' : "Buy Now"}
               </button>
             </div>
           </div>

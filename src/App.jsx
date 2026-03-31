@@ -1,50 +1,38 @@
-
-import './App.css'
-import Navbar from './Components/Navber';
-import Banner from './Components/Banner';
- import Ratting from './Components/Ratting';
- import Cards from '../src/Components/CardsSection/Cards';
-import FakeCards from './Components/CardsSection/FakeCards';
- import FakeCardBuying from './Components/CardsSection/FakeCardBuying'
- import Footer from './Components/CardsSection/Footer'
-import CardsApiCalling from '../src/Components/CardsSection/CardsApiCalling'
-import { Suspense } from 'react';
-
-
-
-function App() {
-
- const fetchData = async () => {
-  const res = await fetch('../public/Api.json');
- return await res.json();
-
+import "./App.css";
+import Navbar from "./Components/Navber";
+import Banner from "./Components/Banner";
+import Ratting from "./Components/Ratting";
+import Cards from "../src/Components/CardsSection/Cards";
+import FakeCards from "./Components/CardsSection/FakeCards";
+import FakeCardBuying from "./Components/CardsSection/FakeCardBuying";
+import Footer from "./Components/CardsSection/Footer";
+import { Suspense } from "react";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+function App({ card }) {
   
- }
-  
-const promise = fetchData()
-  
- 
- 
- 
-  
+  const fetchData = async () => {
+    const res = await fetch("../public/Api.json");
+    return await res.json();
+  };
 
-  return(
-<>
-<Navbar/>
-<Banner/>
-<Ratting/>
+  const promise = fetchData();
 
-<Suspense fallback={<p>Loading...............</p>}>
-<Cards promise={promise} />
-</Suspense>
- 
+  return (
+    <>
+      <Navbar />
+      <Banner />
+      <Ratting />
 
-
-<FakeCards/>
-<FakeCardBuying/>
-<Footer/>
+      <Suspense fallback={<p>Loading...............</p>}>
+        <Cards promise={promise} card={card} />
+      </Suspense>
+<ToastContainer />
+      <FakeCards />
+      <FakeCardBuying />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
