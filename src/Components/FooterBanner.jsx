@@ -6,8 +6,8 @@ const FooterBanner = () => {
             <div className="hero bg-linear-to-r from-[#4f39f6] to-purple-600 min-h-screen ">
   <div className="hero-content  text-center">
     <div className="max-w-md">
-      <h1 className="text-5xl font-bold text-nowrap text-center flex justify-center mx-auto text-white">Ready To Transfrom Your Workflow?</h1>
-      <p className="py-6 text-nowrap mx-auto flex justify-center text-gray-300">
+      <h1 className="text-5xl font-bold lg:text-nowrap text-center flex justify-center mx-auto text-white">Ready To Transfrom Your Workflow?</h1>
+      <p className="py-6 lg:text-nowrap mx-auto flex justify-center text-gray-300">
 Join thousanda of professionals who are already usung Diging Digitools to work smarter.<br></br>
 Start your free trial today.
 

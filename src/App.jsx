@@ -6,12 +6,18 @@ import Cards from "../src/Components/CardsSection/Cards";
 import FakeCards from "./Components/CardsSection/FakeCards";
 import FakeCardBuying from "./Components/CardsSection/FakeCardBuying";
 import Footer from "./Components/CardsSection/Footer";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FooterBanner from './Components/FooterBanner';
-function App({ card }) {
-  
+import CardsRender from "./Components/CardsSection/CardsRender";
+function App() {
+  const [CartCount , setCartCount]=useState(0);
+  const handleBuy= ()=>{
+    setCartCount(CartCount+ 1)
+  }
+
+
   const fetchData = async () => {
     const res = await fetch("../public/Api.json");
     return await res.json();
@@ -21,12 +27,12 @@ function App({ card }) {
 
   return (
     <>
-      <Navbar />
+      <Navbar count={CartCount} />
       <Banner />
       <Ratting />
 
-      <Suspense fallback={<p>Loading...............</p>}>
-        <Cards promise={promise} card={card} />
+      <Suspense fallback={<p className="flex justify-center mx-auto text-3xl">Loading...........</p>}>
+        <Cards promise={promise} handleBuy={handleBuy} count={CartCount} />
       </Suspense>
 <ToastContainer />
       <FakeCards />

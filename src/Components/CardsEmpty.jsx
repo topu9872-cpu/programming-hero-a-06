@@ -46,13 +46,13 @@ const CardsEmpty = ({ selectedCard, setSlectedCard }) => {
               <div key={card.id}>
                 <div
                   key={card.id}
-                  className="flex my-6 bg-[#f2f2f2] mx-26 py-4 rounded-md justify-center"
+                  className="flex my-6 bg-[#f2f2f2] lg:mx-26 py-4 rounded-md justify-center"
                 >
                   <div className="flex ">
-                    <div className="lg:mx-28 pr-60 md:pr-90 lg:pr-120 items-center flex">
+                    <div className="lg:mx-28 pr-40 md:pr-90 lg:pr-100 items-center flex">
                       <div>
                         <img
-                          className="border mr-6 max-w-10 lg:mr-32"
+                          className="p-4 bg-white rounded-full mr-26 max-w-20 lg:mr-32"
                           src={card.icon}
                         ></img>
                       </div>
@@ -92,7 +92,7 @@ const CardsEmpty = ({ selectedCard, setSlectedCard }) => {
               </button>
             </div>
           </div>
-          <App card={selectedCard} />
+          
         </>
       )}
     </div>

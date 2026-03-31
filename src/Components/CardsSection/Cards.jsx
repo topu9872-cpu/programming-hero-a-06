@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CardsEmpty from "../CardsEmpty";
 import CardsApiCalling from './CardsApiCalling'
 
-const Cards = ({promise, card }) => {
+const Cards = ({promise, handleBuy,count}) => {
   
   
  const [selectedCard,setSelectedCard]=useState([])
@@ -38,12 +38,12 @@ const Cards = ({promise, card }) => {
           } rounded-full px-4 py-2`}
         
    
-        >cart
+        >Cart( {count} )
     </button>
     
   </div>
   {toggle==='Carts' && <CardsEmpty selectedCard={selectedCard} setSlectedCard={setSelectedCard} />}
-  {toggle==='Products' && <CardsApiCalling promise={promise} setSelectedCard={setSelectedCard} selectedCard={selectedCard}
+  {toggle==='Products' && <CardsApiCalling promise={promise} setSelectedCard={setSelectedCard} handleBuy={handleBuy} selectedCard={selectedCard}
   />}
   
     </div>

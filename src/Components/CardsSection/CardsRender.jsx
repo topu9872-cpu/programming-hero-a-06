@@ -2,14 +2,14 @@ import React,{useState} from 'react';
 import Cards from './Cards';
 import { toast } from 'react-toastify';
 
-const CardsRender = ({card,setselectedCard,selectedCard}) => {
+const CardsRender = ({card,setselectedCard,selectedCard,handleBuy}) => {
   
       const [isBuy, setisBuy] = useState(false);
 
 const handleSeleted = ()=>{
 
   setisBuy(true)
-
+handleBuy()
 setselectedCard([...selectedCard, card])
 toast.success('Product is in to the Cart')
 }
