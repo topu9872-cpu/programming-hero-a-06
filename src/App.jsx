@@ -10,7 +10,7 @@ import { Suspense, useState } from "react";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FooterBanner from './Components/FooterBanner';
-import { HashRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   const [CartCount , setCartCount]=useState(0);
   const handleBuy= ()=>{
@@ -28,12 +28,7 @@ function App() {
   return (
     <>
 
-     <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </HashRouter>
+
       <Navbar count={CartCount} />
       <Banner />
       <Ratting />

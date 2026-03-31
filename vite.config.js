@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: '/programming-hero-a-06/',
+   
   plugins: [react(),
     tailwindcss()
   ],
