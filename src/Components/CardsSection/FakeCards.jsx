@@ -1,7 +1,7 @@
 import React from "react";
-import Image1 from "../../../public/assets/products/user.png";
-import Image2 from "../../../public/assets/products/rocket.png";
-import Image3 from "../../../public/assets/products/package.png";
+import Image1 from "/assets/products/user.png";
+import Image2 from "/assets/products/rocket.png";
+import Image3 from "/assets/products/package.png";
 const FakeCards = () => {
   return (
     <div className="max-w-10/12 mx-auto mt-30">

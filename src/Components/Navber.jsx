@@ -1,5 +1,5 @@
 
-import Image from "../../public/assets/products/shopping-cart.png";
+import Image from "/assets/products/shopping-cart.png";
 const Navbar = ({ count}) => {
 
 

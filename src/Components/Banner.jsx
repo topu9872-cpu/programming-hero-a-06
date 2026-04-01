@@ -1,5 +1,5 @@
-import Image from "../../public/assets/products/banner.png";
-import Image2 from "../../public/assets/products/Play.png";
+import Image from "/assets/products/banner.png";
+import Image2 from "/assets/products/Play.png";
 const Banner = () => {
   return (
     <div className="max-w-10/12 flex mx-auto">

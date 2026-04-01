@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import Image from "../../public/assets/products/shopping-cart.png";
+import Image from "/assets/products/shopping-cart.png";
 import App from "../App";
 
 const CardsEmpty = ({ selectedCard, setSlectedCard }) => {

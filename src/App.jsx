@@ -19,7 +19,7 @@ function App() {
 
 
   const fetchData = async () => {
-    const res = await fetch("../public/Api.json");
+    const res = await fetch("/Api.json");
     return await res.json();
   };
 
